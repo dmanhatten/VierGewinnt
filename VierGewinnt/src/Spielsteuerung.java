@@ -29,12 +29,12 @@ public class Spielsteuerung {
 			dieOberflaeche.warteAufEingabe();
 			if (pruefeGewonnen()) {
 				derSpieler[aktuellerSpieler].rundeGewonnen();
-				System.out.println("Spieler " + getAktuellerSpielerName() + " hat gewonnen!");
-				System.out.println("Du hast " + derSpieler[aktuellerSpieler].getRundenGewonne() + " Runde(n) gewonnen!");
+				dieOberflaeche.gebeAus("Spieler " + getAktuellerSpielerName() + " hat gewonnen!", true);
+				dieOberflaeche.gebeAus("Du hast " + derSpieler[aktuellerSpieler].getRundenGewonne() + " Runde(n) gewonnen!", true);
 				break;
 			}
 			if (dasSpielfeld.pruefeVoll()) {
-				System.out.println("Unentschieden!");
+				dieOberflaeche.gebeAus("Unentschieden!", true);
 				break;
 			}
 			

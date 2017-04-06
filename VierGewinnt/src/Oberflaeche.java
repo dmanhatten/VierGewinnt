@@ -53,5 +53,26 @@ public class Oberflaeche {
 			return false;
 		}		
 	}
+	
+	public void gebeAus(char zeichen, boolean zeilenumbruch) {
+		System.out.print(zeichen);
+		if(zeilenumbruch) {
+			System.out.println();
+		}
+	}
+	
+	public void gebeAus(int zahl, boolean zeilenumbruch) {
+		System.out.print(zahl);
+		if(zeilenumbruch) {
+			System.out.println();
+		}
+	}
+
+	public void gebeAus(String text, boolean zeilenumbruch) {
+		System.out.print(text);
+		if(zeilenumbruch) {
+			System.out.println();
+		}
+	}
 
 }
