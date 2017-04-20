@@ -1,4 +1,5 @@
 
+
 public class Spieler {
 	private int wert;
 	private String name;
